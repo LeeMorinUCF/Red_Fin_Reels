@@ -17,12 +17,17 @@
 #
 # Sample code for the problem sets in the course ECO 6935-6,
 # Capstone Project in Business Analytics, for the MSBA program.
-# Red_Fin_Reels_Reg_Models gives examples of linear regression models
-#   by considering a number of different model specifications
-#   on the full sample.
+# 4_Density.R gives examples of linear regression models
+#   by considering an augmented version of the model 
+#   in 3_Interactions.R by introducing a variable to measure
+#   the density of the fly reels.
+#   
 #
 # Dependencies:
-#   None.
+#   Assumes the following scripts have been run first:
+#   1. 1_Full_Sample.R
+#   2. 2_Separate_Models.R
+#   3. 3_Interactions.R
 #
 #
 ##################################################
@@ -124,7 +129,7 @@ flyreel_decision[, decision_vars] <- design_options
 
 # Calculate cost of materials (same, regardless).
 flyreel_decision[, 'cost'] <- 
-  flyreel_decision[, 'Weight']*16*price_alum
+  flyreel_decision[, 'Weight']/16*price_alum
 
 # Add cost of shipping (differs by country).
 flyreel_decision[, 'cost'] <- 

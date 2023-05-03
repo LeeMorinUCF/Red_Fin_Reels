@@ -17,12 +17,13 @@
 #
 # Sample code for the problem sets in the course ECO 6935-6,
 # Capstone Project in Business Analytics, for the MSBA program.
-# Red_Fin_Reels_Reg_Models gives examples of linear regression models
+# 2_Separate_Models.R gives examples of linear regression models
 #   by considering a number of different model specifications
-#   on the full sample.
+#   on separate samples: reels made in the USA and abroad.
 #
 # Dependencies:
-#   None.
+#   Assumes the following scripts have been run first:
+#   1. 1_Full_Sample.R
 #
 #
 ##################################################

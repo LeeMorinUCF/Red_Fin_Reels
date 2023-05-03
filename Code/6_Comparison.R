@@ -17,16 +17,17 @@
 #
 # Sample code for the problem sets in the course ECO 6935-6,
 # Capstone Project in Business Analytics, for the MSBA program.
-# Red_Fin_Reels_Comparison calculates the variables necessary 
+# 6_Comparison.R calculates the variables necessary 
 #   to make a decision over where and how to manufacture fly reels,
 #   under several model specifications.
 #
 # Dependencies:
 #   Assumes the following scripts have been run first:
-#   1. Red_Fin_Reels_Reg_Model_full.R
-#   1. Red_Fin_Reels_Reg_Model_int.R
-#   1. Red_Fin_Reels_Reg_Model_density.R
-#   4. Red_Fin_Reels_Selection_Models.R
+#   1. 1_Full_Sample.R
+#   2. 2_Separate_Models.R
+#   3. 3_Interactions.R
+#   4. 4_Density.R
+#   5. 3_Interactions.R
 #
 #
 ##################################################

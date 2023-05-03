@@ -17,8 +17,8 @@
 #
 # Sample code for the problem sets in the course ECO 6935-6,
 # Capstone Project in Business Analytics, for the MSBA program.
-# Red_Fin_Reels_Selection_Models gives examples of
-#  sample selection models, using the Tobit model, type V.
+# 3_Interactions.R gives examples of
+#  sample selection models, using the Tobit model, Type V.
 #
 # Dependencies:
 #   sampleSelection library to estimate models
@@ -677,7 +677,7 @@ flyreel_decision[, decision_vars] <- design_options
 
 # Calculate cost of materials (same, regardless).
 flyreel_decision[, 'cost'] <- 
-  flyreel_decision[, 'Weight']*16*price_alum
+  flyreel_decision[, 'Weight']/16*price_alum
 
 # Add cost of shipping (differs by country).
 flyreel_decision[, 'cost'] <- 
